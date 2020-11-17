@@ -2,6 +2,7 @@ document.getElementsByTagName("div")[0].innerHTML = '<h1>Change Color</h1><butto
 document.getElementsByTagName('div')[0].childNodes[1].style = `background:black; color:yellowgreen; width:20vw; height:50px;font-size:large;border-radius:5vw;`;
 function changeColor() {
     let color = document.getElementsByTagName("input")[0].value;
+    
     let div2 = document.getElementsByTagName("div")[1];
     div2.innerHTML = "<div></div><button onclick='Change2Yellow()'>Change 2 Yellow</button><br>";
     div2.childNodes[0].style = `background:#${color}; width:50vw; height:30vh; border: 2px black solid; margin:1vh 25vw;border-radius:25vw;`;
